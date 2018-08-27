@@ -41,8 +41,7 @@ def get_available_experiments(experiment_pkg_path=None):
     Returns a dictionary with the form <name: experiment>.
     Experiments are classes that inherits from Experiment.
     """
-    if experiment_pkg_path is None:
-        exp_path = os.path.join(BASE_PATH, 'experiments')
+    exp_path = os.path.join(BASE_PATH, 'experiments') if experiment_pkg_path is None else experiment_pkg_path
 
     logger.debug("About to load experiments from %s", exp_path)
     return runner_base.get_registered_experiments(exp_path)
