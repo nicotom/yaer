@@ -60,8 +60,7 @@ def get_validated_experiments(included_experiments):
 
 
 def run_experiments(experiments_to_run, dump, dump_path, clean_previous_results):
-    """Runs experiments based on command line parameters
-    """
+    """Runs experiments based on command line parameters"""
     validated_experiments = get_validated_experiments(experiments_to_run)
     n_experiments = len(validated_experiments)
 

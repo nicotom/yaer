@@ -20,6 +20,7 @@ def cli(verbose):
 
 @click.command(name='list')
 def show_available_experiments_cli():
+    """List available experiments."""
     all_experiments = get_available_experiments()
     for e in sorted(all_experiments):
         print(e)
@@ -30,7 +31,7 @@ def show_available_experiments_cli():
               required=True,
               multiple=True,
               help=('Experiment to run. This can be specified multiple times. '
-                    'See list command por options.'))
+                    'See list command for options.'))
 @click.option('-d', '--dump',
               required=False,
               is_flag=True,
@@ -38,7 +39,7 @@ def show_available_experiments_cli():
 @click.option('--clean-previous-results',
               required=False,
               is_flag=True,
-              help='Remove previous results for every runned experiment.')
+              help='Remove previous results for every executed experiment.')
 @click.option('--dump_path',
               type=click.Path(),
               required=False,
