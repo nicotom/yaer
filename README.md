@@ -2,6 +2,7 @@
 Tool to run experiments
 
 ## Usage
+```bash
 Usage: yaer [OPTIONS] COMMAND [ARGS]...
 
 Options:
@@ -19,6 +20,7 @@ RUN
 -d, --dump                  Dump results and files.
 --clean-previous-results    Remove previous results for every executed experiment.
 --dump_path                 Base path to dump results and files.
+```
 
 ## Examples
 ```bash
