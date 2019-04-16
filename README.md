@@ -16,7 +16,7 @@ Commands:
 
 Arguments:
 RUN
--e, --experiment            Experiment to run. This can be specified multiple times. See list command por options.
+-e, --experiment            Experiment to run. This can be specified multiple times.
 -d, --dump                  Dump results and files.
 --clean-previous-results    Remove previous results for every executed experiment.
 --dump_path                 Base path to dump results and files.
